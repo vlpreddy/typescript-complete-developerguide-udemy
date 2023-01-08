@@ -1,0 +1,21 @@
+TS can do type inference when extracting values from a array
+TS can prevent us from adding incompatible values to the array
+We can get help with 'map', 'forEach', 'reduce' functions
+Flexible - arrays can still contain multiple different types
+
+carMakers.push(100);
+
+carMakers.map(
+  (car:string) :string => {
+  return car;
+  //since return value is a string, we can apply any string methods to returned value like toUpperCase(), slice() e.t.c
+  }
+);
+
+//Flexible Types
+
+const importantDAtes:(Date | string[]) = [new Date(), '2030-10-10'];
+// now typescript treat the variable contains both data and string
+
+
+
